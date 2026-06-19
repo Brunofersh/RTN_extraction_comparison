@@ -23,3 +23,8 @@ results/noise_robustness_test/results_plot_noise_robustness_test_glyph.png
 results/noise_robustness_test/results_plot_noise_robustness_test_shift_kmeans_fhmm_grid.png
 results/noise_robustness_test/results_plot_noise_robustness_test_triband.png
 results/tvd_analysis
+RTN_plotter.py
+test_kmeans.py
+test_known_data.py
+test_sequential.py
+time_plots
