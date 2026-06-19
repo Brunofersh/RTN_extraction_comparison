@@ -1,0 +1,27 @@
+1. Introduction
+	- What is RTN, its uses (PUFs, TRNG).
+	- Description of main RTN parameters (Number of defects, dwell times and current shifts).
+	- Why it is important to characterize these parameters (technology characterization for TRNG...).
+
+2. Description of Methods Used 
+	- K-Means: explanation and presudocode (it is a very broadly known ML algorithm) + optimal # of clusters determination (Gap metric)
+	- WTLP: origin and method explanation, alpha parameter, Ith vs Ith+1 graph.
+	- FHMM: brief explanation of regular HMMs and Baum-Welch algorithm (the one that extracts the parameters)
+
+3. Test Methology
+	- State that the tested RTN is simulated (in order to have ground truth available).
+	- Clarify which parameters used in the methods are supposed to be known beforehand and which are not.
+	- Discuss the effects of not knowing these parameters beforehand.
+
+4. Test Description
+	- Description of the 3 proposed tests (1: Dwell time determination test, 2: Number of defects determination test, 3: Noise robustness test).
+	- One relevant graph for each test.
+
+5. Result Discussion
+	- Discussion of the results of the 3 tests + graph of the time spent by each method (to give a more nuanced comparison).
+
+6. Best Method (or combination of methods) Application
+	- MILESTONE-I chip experiment explanation and results discussion.
+
+7. Conclusions
+
