@@ -27,4 +27,4 @@ RTN_plotter.py
 test_kmeans.py
 test_known_data.py
 test_sequential.py
-time_plots
+time_plots.py
