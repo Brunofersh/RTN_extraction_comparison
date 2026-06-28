@@ -12,7 +12,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 from kmeans import kmeans_test
-from fhmm import fhmm_test
+from fhmm_gpu import fhmm_test
 
 
 # ════════════════════════════════════════════════════════════════════════
@@ -22,15 +22,15 @@ from fhmm import fhmm_test
 MODE = "real"  # "synthetic" or "real"
 
 #----Synthetic Mode Parameters----#
-global_test_name = "trace_length_estimation_test"
+global_test_name = "large_noise_test"
 mode = "trace_length"  # "n_events" or "variation" or "SNR" or "trace_length"
-test_number_min=1
+test_number_min=0
 test_number_max=5
 
 #----Real Mode Parameters----#
 
-root_dir   = "MILESTONE_I_tests\\data"
-output_dir = Path("results\\real_traces")
+root_dir   = "data_test\\data"
+output_dir = Path("results\\large_noise_test")
 
 
 
@@ -358,7 +358,8 @@ def run_real(root_dir,output_dir):
     tmpdir = tempfile.mkdtemp(prefix="rtn_tmp_")
 
     # ── Recopilar todas las trazas de todos los CSV ──────────────────────
-    pattern = re.compile(r"traces_(\d+)_(\d+)_(\d+)_(\d+)_")
+    #pattern = re.compile(r"traces_(\d+)_(\d+)_(\d+)_(\d+)_")
+    pattern = re.compile(r"")
 
     task_list = []
 
